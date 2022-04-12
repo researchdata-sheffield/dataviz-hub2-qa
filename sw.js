@@ -63,11 +63,11 @@ self.__precacheManifest = [
     "url": "dc6a8720040df98778fe970bf6c000a41750d3ae-25e6a8c7bae64bce5a78.js"
   },
   {
-    "url": "app-987f53e80eb68f05399a.js"
+    "url": "app-a18578add3fadbfc1c0a.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "ce903a58d26d91f16590cffcbd191373"
+    "revision": "cb47b90864b3fe7c8a09cd902b665593"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-d7b607a7d49db7e1f214.js"
@@ -78,7 +78,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "0df93a23b63c84fcbc2367ad17b2416d"
+    "revision": "6d41c936786a8f3d5ce1d25cc98c0669"
   },
   {
     "url": "polyfill-cfa6699bb0fa1c636ed3.js"
@@ -195,7 +195,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/dataviz-hub2-qa/app-987f53e80eb68f05399a.js`))) {
+  if (!resources || !(await caches.match(`/dataviz-hub2-qa/app-a18578add3fadbfc1c0a.js`))) {
     return await fetch(event.request)
   }
 
